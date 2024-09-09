@@ -4,12 +4,16 @@ spring:
   application:
     name: reggie_take_out
 
+
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: gxl911025
     type: com.alibaba.druid.pool.DruidDataSource
+
+
   devtools:
     remote:
       restart:
@@ -18,6 +22,7 @@ spring:
       additional-paths: src/main/java
   main:
     banner-mode: off
+
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
@@ -29,6 +34,9 @@ mybatis-plus:
 
 reggie:
   path: src/main/resources/images/
+
+
+
 
 
 
