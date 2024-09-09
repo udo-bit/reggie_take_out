@@ -1,0 +1,35 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reggie_take_out
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: gxl911025
+    type: com.alibaba.druid.pool.DruidDataSource
+  devtools:
+    remote:
+      restart:
+        enabled: true
+    restart:
+      additional-paths: src/main/java
+  main:
+    banner-mode: off
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: assign_id
+    banner: false
+
+reggie:
+  path: src/main/resources/images/
+
+
+
+
