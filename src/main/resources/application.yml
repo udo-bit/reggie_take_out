@@ -4,6 +4,12 @@ spring:
   application:
     name: reggie_take_out
 
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 60000
+
 
 
   datasource:
