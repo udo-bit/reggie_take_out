@@ -108,6 +108,7 @@ public class DishController {
         wrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
         List<Dish> list = dishService.list(wrapper);
         dishDtoList = list.stream().map((item) -> {
+            
             DishDto dishDto = new DishDto();
             BeanUtils.copyProperties(item, dishDto);
             Long categoryId = item.getCategoryId();
